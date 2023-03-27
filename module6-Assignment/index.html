@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 6</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+	<form action="register.php" method="post">
+		<label for="first_name">First Name:</label>
+		<input type="text" id="first_name" name="first_name" required>
+		<br>
+		<label for="last_name">Last Name:</label>
+		<input type="text" id="last_name" name="last_name" required>
+		<br>
+		<label for="email">Email Address:</label>
+		<input type="email" id="email" name="email" required>
+		<br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<br>
+		<label for="confirm_password">Confirm Password:</label>
+		<input type="password" id="confirm_password" name="confirm_password" required>
+		<br>
+		<input type="submit" value="Register">
+	</form>
+
+	<h1>Login Form</h1>
+	<form action="login.php" method="post">
+		<label for="login_email">Email Address:</label>
+		<input type="email" id="login_email" name="login_email" required>
+		<br>
+		<label for="login_password">Password:</label>
+		<input type="password" id="login_password" name="login_password" required>
+		<br>
+		<input type="submit" value="Login">
+	</form>
+</body>
+</html>
