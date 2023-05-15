@@ -1,0 +1,21 @@
+In a Laravel project, the purpose of each folder is as follows:
+
+1. **app:** This folder contains the core application code, including models, controllers, middleware, and other classes that define the business logic of the application.
+
+2. **bootstrap:** This folder contains the files responsible for bootstrapping the application, including the `app.php` file that initializes the Laravel framework, and the `autoload.php` file that sets up the autoloading of classes.
+
+3. **config:** This folder contains configuration files for the application, including database configuration, application settings, and other settings that affect the behavior of the application.
+
+4. **database:** This folder contains the database migrations, seeders, and factories that define the structure and initial data of the application's database.
+
+5. **public:** This folder contains the public-facing assets of the application, including the `index.php` file that serves as the entry point for the application, and the `assets` folder that contains images, stylesheets, and JavaScript files.
+
+6. **resources:** This folder contains the non-public-facing assets of the application, including the `views` folder that contains the application's Blade templates, and the `lang` folder that contains the application's language files.
+
+7. **routes:** This folder contains the application's route definitions, which map incoming requests to specific controllers and actions.
+
+8. **storage:** This folder contains the application's temporary files, including cached views, logs, and session files.
+
+9. **tests:** This folder contains the automated tests for the application, including unit tests, feature tests, and browser tests.
+
+10. **vendor:** This folder contains the application's third-party dependencies, including the Laravel framework itself, as well as any other packages installed via Composer.

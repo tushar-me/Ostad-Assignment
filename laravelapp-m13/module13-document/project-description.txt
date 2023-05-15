@@ -1,0 +1,5 @@
+আসসালামু আলাইকুম , স্যার 
+
+আমার laravel valet ইন্সটল করা । তাই php artisan serve কমান্ড use করার  প্ৰয়োজন হয় না । laravelapp.test লেখলেই ব্রাউজারে রান করে । তবুও laravelapp http://127.0.0.1:8000 এ রান করেছি check screenshot.
+
+Project description : simple দুইটা page create করছি  home page, admin page এবং page গুলো route এবং controllers এ connect করেছি । ব্রাউজার url এ laravelapp.test/admin লেখলে admin page show করবে এবং সেখানে go back button এ click করলে home page এ নিয়ে আসে ।
