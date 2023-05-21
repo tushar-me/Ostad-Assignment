@@ -1,0 +1,84 @@
+Ans-1...
+$name = request()->input('name');
+
+
+Ans-2...
+$userAgent = request()->header('User-Agent');
+
+
+Ans-3 ...
+$page = request()->query('page');
+
+if ($page === null) {
+    $page = null;
+}
+
+
+Ans-4 ....
+$data = [
+    'message' => 'Success',
+    'data' => [
+        'name' => 'John Doe',
+        'age' => 25,
+    ],
+];
+
+$response = new JsonResponse($data);
+
+return $response;
+
+{
+    "message": "Success",
+    "data": {
+        "name": "John Doe",
+        "age": 25
+    }
+}
+
+
+Ans-5...
+use Illuminate\Support\Facades\Storage;
+
+// Validate and handle the file upload
+if (request()->hasFile('avatar')) {
+    $file = request()->file('avatar');
+
+    // Get the original filename
+    $filename = $file->getClientOriginalName();
+
+    // Store the uploaded file in the 'public/uploads' directory
+    $path = $file->storeAs('uploads', $filename, 'public');
+}
+
+
+Ans-6...
+// Retrieve the value of the 'remember_token' cookie from the current request
+$rememberToken = request()->cookie('remember_token');
+
+// If the 'remember_token' cookie is not present, set $rememberToken to null
+if ($rememberToken === null) {
+    $rememberToken = null;
+}
+
+
+Ans-7...
+use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Route;
+
+Route::post('/submit', function (Request $request) {
+    // Retrieve the 'email' input parameter from the request
+    $email = $request->input('email');
+
+    // Use the $email variable as needed
+    // For example, you can store it in the database or use it for further processing
+
+    // Create a JSON response with the desired data structure
+    $data = [
+        'success' => true,
+        'message' => 'Form submitted successfully.',
+    ];
+
+    // Return the JSON response
+    return new JsonResponse($data);
+});
